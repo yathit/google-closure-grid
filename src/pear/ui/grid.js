@@ -2413,7 +2413,8 @@ pear.ui.Grid.prototype.renderDataRowCells_ = function(row) {
  * @todo - Performance Sucker ....
  */
 pear.ui.Grid.prototype.removeRowsFromRowModelCache_ = function(start, end) {
-  for (var i in this.renderedGridRowsCache_) {
+  for (var k in this.renderedGridRowsCache_) {
+    var i = parseInt(k, 10);
     if (i < start || i > end) {
       if (this.isActiveEditorGridRow(this.renderedGridRowsCache_[i]) ||
           this.isActiveGridRow(this.renderedGridRowsCache_[i])) {

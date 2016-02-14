@@ -276,7 +276,7 @@ pear.data.Column.prototype.getVisibility = function() {
 /**
  * Get the column formatting function - this function will be called
  * for each DataCell for the column it belong to
- * @return {Object.<function(pear.ui.GridCell),Object>}
+ * @return {Object}
  * @public
  */
 pear.data.Column.prototype.getColumnFormatter = function() {
